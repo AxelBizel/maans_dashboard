@@ -1,0 +1,96 @@
+.buttonWrapper {
+  display: flex;
+
+  &.right {
+    justify-content: flex-end;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  button {
+    box-sizing: border-box;
+    appearance: none;
+    border: 2px solid $color_blue;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 1;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+
+
+
+    @media screen and (max-width: 1300px) {
+      padding: 7px 14px;
+    }
+  }
+
+  .standardButton {
+    background-color: transparent;
+    color: $color_blue;
+    font-weight: 400;
+    transition: color 150ms ease-in-out;
+
+    &:focus {
+      color: $color_blue;
+      outline: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 100%;
+      background: $color_blue;
+      z-index: -1;
+      transition: width 150ms ease-in-out;
+    }
+
+    &:hover {
+      color: #fff;
+      font-weight: bold;
+      &:after {
+        width: 110%;
+        outline: 0;
+        color: $color_blue;
+      }
+    }
+  }
+
+  .unselectedButton {
+    background-color: transparent;
+    border: 2px solid $color_bg;
+    color: $color_blue;
+    font-weight: 400;
+    padding: 5px 8px;
+    box-shadow: 1px 1px $color_bg;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .selectedButton {
+    color: white;
+    padding: 5px 8px;
+    background-color: $color_blue;
+    &:hover,
+    &:focus {
+      outline: 0;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+#Customization {
+  .mainContainer {
+    padding: 8vh 8vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 5vh;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+
+    .section {
+      background-color: white;
+
+      .sectionHeader {
+        background-color: $color_blue;
+        color: white;
+        padding: 2vh 2vw;
+
+        & .msg {
+          margin-top: 5vh;
+
+          textarea {
+            height: 25vh !important;
+          }
+        }
+      }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 60vh;
+      background-color: white;
+
+      &.themes {
+        padding: 3vh 2vw;
+        margin: 2vh 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw;
+
+        .theme {
+          width: 6vw;
+          height: 6vw;
+          display: flex;
+          margin: 0 auto;
+          border-radius: 10%;
+          border: 10px solid transparent;
+
+          &.isActive {
+            border: 10px solid $color_bg;
+
+            .name {
+              font-weight: bold;
+            }
+          }
+
+          .name {
+            color: white;
+            font-size: 1.2em;
+            margin: auto;
+          }
+        }
+      }
+
+      &.msg {
+        padding: 3vh 2vw;
+
+        textarea {
+          height: 20vh;
+        }
+      }
+
+      &.popup {
+        padding: 3vh 2vw;
+        position: relative;
+
+        .selectButtonsContainer {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 1vw;
+          row-gap: 2vh;
+          margin: 3vh 0;
+          padding: 0 3vw;
+        }
+
+        .addInputAndButton {
+          margin: 0 auto;
+          position: relative;
+
+          .addInput {
+            width: 70%;
+            font-size: 0.9rem;
+            padding: 0.5rem;
+          }
+          .addButton {
+            background-color: $color_blue;
+            padding: 0.66rem 1rem;
+            border: 2px solid $color_bg;
+            border-left: none;
+            outline: none;
+            &:hover,
+            &:focus {
+              border-color: $color_blue;
+            }
+          }
+          .addIcon {
+            color: white;
+          }
+        }
+
+        .popupButtons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-top: 2vh;
+        }
+      }
+    }
+  }
+}

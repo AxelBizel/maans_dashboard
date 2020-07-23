@@ -1,0 +1,27 @@
+#HeaderBar {
+  height: 66px;
+  max-height: 66px;
+  background-color: $color_anthracite;
+  position: fixed;
+  top: 0;
+  left: 66px;
+  width: calc(100vw - 66px);
+  padding: 0 1vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+
+  &.fullWidth{
+    width:100vw;
+    left:0;
+    padding: 0 2vw;
+  }
+
+  
+
+  .title {
+    color: white;
+  }
+ 
+}

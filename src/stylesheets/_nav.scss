@@ -1,0 +1,45 @@
+#Nav {
+  min-height: 100vh;
+  width: 66px;
+  background-color: $color_anthracite;
+  position: fixed;
+  z-index:10;
+  top: 0;
+  left: 0;
+
+  .logo {
+    height: 60px;
+    margin-top: 6px;
+    background-image: url("../assets/img/maans.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  li {
+    font-size: 1.6em;
+    text-align: center;
+    padding: 2vh 0;
+    color: $color_lightblue;
+    :hover {
+      color: white;
+    }
+  }
+
+  .active {
+    color: $color_white;
+  }
+
+  .hrActive {
+    border-bottom: 2px solid white;
+    height: 0px;
+    width: 30px;
+    margin: 3px auto;
+  }
+  .hrInactive {
+    border-bottom: 2px solid $color_anthracite;
+    height: 0px;
+    width: 10px;
+    margin: 3px auto;
+  }
+}

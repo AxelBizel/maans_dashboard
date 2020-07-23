@@ -1,0 +1,17 @@
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+.textInput,
+.addInput,
+textarea,
+select {
+  border: 2px solid $color_bg;
+  outline: none;
+  padding: 0.66rem 1rem;
+  font-size: 1rem;
+
+  &:focus {
+    border: 2px solid $color_blue;
+  }
+}

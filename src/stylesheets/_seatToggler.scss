@@ -1,0 +1,47 @@
+.seatToggler {
+  position: relative;
+
+  .buttonDropDown {
+    padding-right:2vw;
+    width: 220px;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    align-items: center;
+    text-align: right;
+
+    h4{
+      width: 90%;
+    }
+    .arrowContainer {
+      padding-top: 3px;
+      text-align: left;
+    }
+  }
+
+  .seatListOn {
+    background-color: $color-anthracite;
+    width: 100%;
+    position: absolute;
+    font-size: small;
+    color: white;
+
+    li {
+      margin: 1vh 0;
+      padding: 1vh 1vw;
+      border: 1px solid transparent;
+      text-align: center;
+
+      &:hover {
+        border: 1px solid $color-blue;
+      }
+    }
+  }
+
+  .seatListOff {
+    display: none;
+  }
+}

@@ -1,0 +1,36 @@
+.seatModal {
+  @import "switch";
+
+  .modal_bg {
+    width: calc(100vw - 66px);
+    height: calc(100vh - 66px);
+    background-color: $color_transparentblue;
+    position: fixed;
+    top: 66px;
+    left: 66px;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    width: 60%;
+    max-width: 900px;
+    height: auto;
+    background-color: white;
+    z-index: 9;
+    display: flex;
+    position: relative;
+    padding:5vh;
+
+    .seatImg {
+      width: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 1vh;
+      margin-right: 1vw;
+    }
+  }
+}

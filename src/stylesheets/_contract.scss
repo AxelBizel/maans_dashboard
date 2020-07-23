@@ -1,0 +1,144 @@
+#Contract {
+  @import "pagination";
+  .mainContainer {
+    padding: 10vh 8vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7vw;
+
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 5vh;
+    }
+ h2{
+   margin-bottom: 2vh;
+ }
+    .leftColumn {
+      grid-column: 1/3;
+
+      .billsSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 66vh;
+       
+
+        .billsHeader {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          margin: 0 0 10px 0;
+          padding: 2vh 2vw;
+          background-color: $color_blue;
+          color: white;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          .amount,
+          .status {
+            text-align: center;
+          }
+          .download {
+            text-align: right;
+          }
+        }
+
+        .billItem {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          margin: 10px 0;
+          padding: 2vh 2vw;
+          background-color: white;
+          border: 2px solid #ff000000;
+
+          &:hover {
+            border: 2px solid $color_blue;
+          }
+
+          .amount {
+            text-align: center;
+          }
+
+          .period {
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .paymentStatus {
+            display: flex;
+            justify-content: center;
+            span {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              margin: 0 1vw 0 0;
+
+              &.paid {
+                background-color: green;
+              }
+
+              &.unpaid {
+                background-color: orange;
+              }
+            }
+          }
+
+          .downloadIcon {
+            font-size: 1.5em;
+            margin-left: 70%;
+            cursor: pointer;
+
+            &:hover {
+              color: $color_blue;
+            }
+          }
+        }
+      }
+    }
+
+    .rightColumn {
+      .infosSection {
+        grid-column: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 66vh;
+
+        .paymentSection {
+          background-color: white;
+        
+        }
+        .paymentHeader {
+          padding: 2vh 2vw;
+          background-color: $color_blue;
+          color: white;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .paymentInfos {
+          padding: 3vh 2vw;
+          position: relative;
+        }
+
+        .contractDownload {
+          padding: 3vh 2vw;
+          background-color: white;
+        }
+
+        input {
+          margin-top: 1vh;
+          width: 90%;
+        }
+
+        label {
+          margin: 1vh 0;
+        }
+
+        .contractButtons {
+          margin-top: 3vh;
+        }
+      }
+    }
+  }
+}

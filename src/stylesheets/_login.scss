@@ -1,0 +1,45 @@
+#Login {
+  .mainContainer {
+    height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  
+    .formContainer {
+      background-color: white;
+      // height: 350px;
+      width: 350px;
+      margin: auto;
+
+      .header {
+        height: fit-content;
+        background-color: $color_blue;
+        padding: 2vh 2vw;
+        color: white;
+      }
+
+      .details {
+        padding: 2vw;
+        height: auto;
+        display: flex;
+
+        form {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-content: center;
+          margin: 0 10%;
+
+          input {
+            width: 90%;
+            margin: 1vh 0 3vh 0;
+          }
+
+    
+        }
+      }
+    }
+  }
+}

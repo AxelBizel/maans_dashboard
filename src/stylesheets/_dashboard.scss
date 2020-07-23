@@ -1,0 +1,65 @@
+#Dashboard {
+  @import "graph";
+  overflow-y: hidden;
+  height: calc(100vh - 66px);
+
+  .graphsContainer {
+    padding: 2.5vh;
+    @media screen and (max-width: 1300px) {
+      padding: 1.5vh;
+    }   
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5vh;
+    row-gap: 2.5vh;
+    grid-auto-rows: minmax(25vh, auto);
+    @media screen and (max-width: 1300px) {
+      column-gap: 1.5vh;
+      row-gap: 1.5vh;
+    }
+
+    .one {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: white;
+    }
+    .two {
+      grid-column: 2;
+      grid-row: 1;
+      background-color: white;
+    }
+    .three {
+      grid-column: 3;
+      grid-row: 1;
+      background-color: white;
+    }
+    .four {
+      grid-column: 1;
+      grid-row: 2;
+      background-color: white;
+    }
+    .five {
+      grid-column: 2;
+      grid-row: 2;
+      background-color: white;
+    }
+    .six {
+      grid-column: 3;
+      grid-row: 2/4;
+      background-color: white;
+    }
+    .seven {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: white;
+    }
+    .eight {
+      grid-column: 2;
+      grid-row: 3;
+      background-color: white;
+    }
+  }
+}

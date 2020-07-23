@@ -1,0 +1,145 @@
+import {
+  dataSessionDuration,
+  dataSessionNumber,
+  dataUsingDuration,
+  dataContentType,
+  dataUniverse,
+  dataPreferedContents,
+  dataFeedback,
+  dataParcours,
+} from "./graphDatas";
+import {
+  optionsRepartition,
+  optionsPreferedContents,
+  optionsRadar,
+  optionsBarAndLine,
+} from "./graphOptions";
+
+export const graphsToDisplay = [
+  {
+    id: 1,
+    title: "Durée de session",
+    type: "area",
+    keyFact: {
+      week: dataSessionDuration.week,
+      month: dataSessionDuration.month,
+      year: dataSessionDuration.year,
+    },
+    data: {
+      week: dataSessionDuration.week,
+      month: dataSessionDuration.month,
+      year: dataSessionDuration.year,
+    },
+    defaultPeriod: "week",
+    position: "one",
+    options: optionsBarAndLine,
+  },
+  {
+    id: 2,
+    title: "Nombre de sessions",
+    type: "area",
+    keyFact: {
+      week: dataSessionNumber.week,
+      month: dataSessionNumber.month,
+      year: dataSessionNumber.year,
+    },
+    data: {
+      week: dataSessionNumber.week,
+      month: dataSessionNumber.month,
+      year: dataSessionNumber.year,
+    },
+    defaultPeriod: "month",
+    position: "two",
+    options: optionsBarAndLine,
+  },
+  {
+    id: 3,
+    title: "Durée d'utilisation",
+    type: "area",
+    keyFact: {
+      week: dataUsingDuration.week,
+      month: dataUsingDuration.month,
+      year: dataUsingDuration.year,
+    },
+    data: {
+      week: dataUsingDuration.week,
+      month: dataUsingDuration.month,
+      year: dataUsingDuration.year,
+    },
+    defaultPeriod: "year",
+    position: "three",
+    options: optionsBarAndLine,
+  },
+
+  {
+    id: 4,
+    title: "Univers",
+    subtitle: "En % des sessions",
+    type: "pie",
+    data: {
+      week: dataUniverse.week,
+      month: dataUniverse.month,
+      year: dataUniverse.year,
+    },
+    options: optionsRepartition,
+    defaultPeriod: "week",
+    position: "four",
+  },
+  {
+    id: 5,
+    title: "Types de contenus",
+    subtitle: "En % des écoutes",
+
+    type: "polar",
+    data: {
+      week: dataContentType.week,
+      month: dataContentType.month,
+      year: dataContentType.year,
+    },
+    options: optionsRepartition,
+    defaultPeriod: "year",
+    position: "five",
+  },
+  {
+    id: 6,
+    title: "Top des contenus",
+    subtitle: "En nombre d'écoutes",
+    type: "horizontalBar",
+    data: {
+      week: dataPreferedContents.week,
+      month: dataPreferedContents.month,
+      year: dataPreferedContents.year,
+    },
+    options: optionsPreferedContents,
+    defaultPeriod: "month",
+    position: "six",
+  },
+  {
+    id: 7,
+    title: "Parcours",
+    subtitle: "En % des sessions",
+    type: "doughnut",
+    data: {
+      week: dataParcours.week,
+      month: dataParcours.month,
+      year: dataParcours.year,
+    },
+    options: optionsRepartition,
+    defaultPeriod: "week",
+    position: "seven",
+  },
+  {
+    id: 8,
+    title: "Feedback",
+    subtitle: "En % des réponses",
+    type: "radar",
+    data: {
+      week: dataFeedback.week,
+      month: dataFeedback.month,
+      year: dataFeedback.year,
+    },
+    options: optionsRadar,
+    defaultPeriod: "year",
+    position: "eight",
+  },
+];

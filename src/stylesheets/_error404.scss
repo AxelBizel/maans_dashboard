@@ -1,0 +1,34 @@
+#Error404 {
+  .mainContainer {
+    height: calc(100vh - 66px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .msgContainer {
+      background-color: white;
+      width: 350px;
+      margin: auto;
+
+      .header {
+        height: fit-content;
+        background-color: $color_blue;
+        padding: 2vh 2vw;
+        color: white;
+      }
+
+      .details {
+        padding: 2vw;
+        height: auto;
+
+        p {
+          margin-bottom: 3vh;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

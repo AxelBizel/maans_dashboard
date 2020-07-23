@@ -1,0 +1,60 @@
+#Help {
+  .mainContainer {
+    padding: 10vh 15vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+
+    @media screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 5vh;
+    }
+
+    @media screen and (min-width: 1500px) {
+      padding: 10vh 20vw;
+    }
+
+    .FAQItem {
+      background-color: white;
+      padding: 2vh 2vw;
+      margin-bottom: 2vh;
+      border: 2px solid $color_bg;
+      height: 100%;
+
+      &:hover {
+        border: 2px solid $color_blue;
+      }
+
+      .questionHeader {
+        display: flex;
+
+        .question {
+          width: 90%;
+        }
+        .arrowHelp {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+    }
+
+    .selected {
+      background-color: $color_blue;
+      color: white;
+      font-weight: bold;
+    }
+
+    .last {
+      margin: 0;
+    }
+
+    .answerSection {
+      background-color: white;
+      padding: 2vh 2vw;
+      height: fit-content;
+    }
+  }
+}
