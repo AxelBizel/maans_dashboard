@@ -32,7 +32,7 @@ function Nav() {
       <div className="logo"></div>
       <nav>
         <ul>
-          <Link to="/home">
+          <Link to="/maans_dashboard/home">
             <li
               className={current === "home" ? "active" : ""}
               onClick={() => {
@@ -47,7 +47,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/dashboard">
+          <Link to="/maans_dashboard/dashboard">
             <li
               className={current === "dashboard" ? "active" : ""}
               onClick={() => {
@@ -62,7 +62,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/contents">
+          <Link to="/maans_dashboard/contents">
             <li
               className={current === "contents" ? "active" : ""}
               onClick={() => {
@@ -77,7 +77,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/custom">
+          <Link to="/maans_dashboard/custom">
             <li
               className={current === "custom" ? "active" : ""}
               onClick={() => {
@@ -92,7 +92,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/contract">
+          <Link to="/maans_dashboard/contract">
             <li
               className={current === "contract" ? "active" : ""}
               onClick={() => {
@@ -107,7 +107,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/help">
+          <Link to="/maans_dashboard/help">
             <li
               className={current === "help" ? "active" : ""}
               onClick={() => {
@@ -122,7 +122,7 @@ function Nav() {
               )}
             </li>
           </Link>
-          <Link to="/">
+          <Link to="/maans_dashboard/">
             <li
               onClick={() => {
                 if (cookies.login === "true") {
