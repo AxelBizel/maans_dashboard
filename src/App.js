@@ -39,29 +39,29 @@ function App() {
             <Nav />
             <div id="Pages">
               <Switch>
-                <Route path="/contents">
+                <Route path="/maans_dashboard/contents">
                   <Contents />
                 </Route>
-                <Route path="/contract">
+                <Route path="/maans_dashboard/contract">
                   <Contract />
                 </Route>
-                <Route path="/custom">
+                <Route path="/maans_dashboard/custom">
                   <Customization />
                 </Route>
-                <Route path="/dashboard">
+                <Route path="/maans_dashboard/dashboard">
                   <Dashboard />
                 </Route>
-                <Route path="/help">
+                <Route path="/maans_dashboard/help">
                   <Help />
                 </Route>
-                <Route path="/login">
+                <Route path="/maans_dashboard/login">
                   <Login />
                 </Route>
-                <Route path="/home">
+                <Route path="/maans_dashboard/home">
                   <Home />
                 </Route>
-                <Route exact path="/">
-                  <Redirect to="/home" />
+                <Route exact path="/maans_dashboard">
+                  <Redirect to="/maans_dashboard/home" />
                 </Route>
                 <Route>
                   <Error404 />
@@ -72,11 +72,11 @@ function App() {
         ) : (
           <div id="Pages" className="fullWidth">
             <Switch>
-              <Route path="/login">
+              <Route path="/maans_dashboard/login">
                 <Login />
               </Route>
               <Route>
-                <Redirect to="/login" />
+                <Redirect to="/maans_dashboard/login" />
               </Route>
             </Switch>
           </div>
