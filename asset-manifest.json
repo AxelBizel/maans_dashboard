@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maans_dashboard/static/css/main.982dfb88.chunk.css",
+    "main.js": "/maans_dashboard/static/js/main.cc3d2ecd.chunk.js",
+    "main.js.map": "/maans_dashboard/static/js/main.cc3d2ecd.chunk.js.map",
+    "runtime-main.js": "/maans_dashboard/static/js/runtime-main.30e7b557.js",
+    "runtime-main.js.map": "/maans_dashboard/static/js/runtime-main.30e7b557.js.map",
+    "static/js/2.b4dcfdcb.chunk.js": "/maans_dashboard/static/js/2.b4dcfdcb.chunk.js",
+    "static/js/2.b4dcfdcb.chunk.js.map": "/maans_dashboard/static/js/2.b4dcfdcb.chunk.js.map",
+    "index.html": "/maans_dashboard/index.html",
+    "precache-manifest.89313acd3db5000821ea82b69b02bdf3.js": "/maans_dashboard/precache-manifest.89313acd3db5000821ea82b69b02bdf3.js",
+    "service-worker.js": "/maans_dashboard/service-worker.js",
+    "static/css/main.982dfb88.chunk.css.map": "/maans_dashboard/static/css/main.982dfb88.chunk.css.map",
+    "static/js/2.b4dcfdcb.chunk.js.LICENSE.txt": "/maans_dashboard/static/js/2.b4dcfdcb.chunk.js.LICENSE.txt",
+    "static/media/Fauteuil.png": "/maans_dashboard/static/media/Fauteuil.7c529844.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.30e7b557.js",
+    "static/js/2.b4dcfdcb.chunk.js",
+    "static/css/main.982dfb88.chunk.css",
+    "static/js/main.cc3d2ecd.chunk.js"
+  ]
+}
